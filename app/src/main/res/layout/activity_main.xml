@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- App Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|end"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_chat"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SocialChat"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Botão de configurações -->
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings"
+            android:background="@android:color/transparent"
+            android:contentDescription="Settings"
+            android:padding="8dp"
+            app:tint="#FFFFFF" />
+
+        <!-- Botão de logout -->
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logout"
+            android:background="@android:color/transparent"
+            android:contentDescription="Logout"
+            android:padding="8dp"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+
+    <!-- Chat Messages Area -->
+    <ScrollView
+        android:id="@+id/scrollViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:background="#1E2632"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/layoutMessages"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+    </ScrollView>
+
+    <!-- Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:background="#1E2632"
+        android:padding="12dp"
+        android:clipToPadding="false"
+        android:elevation="8dp">
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your message..."
+            android:padding="16dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A0A8B8"
+            android:textSize="16sp"
+            android:maxLines="4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="end"
+            android:paddingHorizontal="4dp">
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Clear"
+                android:background="@drawable/button_clear_background"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:layout_marginEnd="8dp"
+                android:paddingHorizontal="24dp"/>
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Send"
+                android:background="@drawable/button_send_background"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:paddingHorizontal="24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

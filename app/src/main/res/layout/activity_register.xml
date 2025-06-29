@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="16dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A0A8B8"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A0A8B8"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etParentPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Parent password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A0A8B8"
+            android:layout_marginBottom="16dp" />
+
+
+        <EditText
+            android:id="@+id/etPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="System Prompt (e.g. 'You are talking to a child...')"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="6"
+            android:gravity="top|start"
+            android:padding="16dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A0A8B8"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:background="@drawable/button_send_background"
+            android:textColor="#FFFFFF"
+            android:paddingVertical="12dp" />
+
+    </LinearLayout>
+</ScrollView>

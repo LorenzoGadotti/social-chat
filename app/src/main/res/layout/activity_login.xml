@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etUsernameLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="16dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A0A8B8"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A0A8B8"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:background="@drawable/button_send_background"
+            android:textColor="#FFFFFF"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvGoToRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register"
+            android:textColor="#A0A8B8"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
