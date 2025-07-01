@@ -25,7 +25,7 @@ In addition to standard AI chat capabilities, **this app includes robust parenta
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/LorenzoGadotti/SocialChat.git
+   git clone https://github.com/LorenzoGadotti/social-chat.git
    cd java-android-messenger
    ```
 2. Open in **Android Studio**
